@@ -2,8 +2,8 @@ from mnemonic import Mnemonic
 from web3 import Web3
 print('print qty of wallets')
 cnt = int(input())
-print('print rpc address, exapmple: https://rpc.ankr.com/eth')
-rpc = input()
+#print('print rpc address, exapmple: https://rpc.ankr.com/eth')
+#rpc = input()
 counter = 0
 while counter <= cnt:
     mnemo = Mnemonic("english")
