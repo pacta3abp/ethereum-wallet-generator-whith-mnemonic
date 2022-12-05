@@ -1,8 +1,8 @@
 from mnemonic import Mnemonic
 from web3 import Web3
-print('введите необходимое количество кошельков')
+print('print qty of wallets')
 cnt = int(input())
-print('укажите rpc, к примеру: https://rpc.ankr.com/eth')
+print('print rpc address, exapmple: https://rpc.ankr.com/eth')
 rpc = input()
 counter = 0
 while counter <= cnt:
@@ -20,5 +20,5 @@ while counter <= cnt:
         file.write(f'\n address: {public_key} , private_key: {private_key} , seed: {words}')
     counter += 1
 
-print(f'Сгенерировано {cnt} кошельков')
+print(f'Generated {cnt} wallets')
 
