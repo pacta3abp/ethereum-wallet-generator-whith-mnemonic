@@ -8,7 +8,7 @@ counter = 0
 while counter <= cnt:
     mnemo = Mnemonic("english")
     words = mnemo.generate(strength=256)
-    MAIN_NET_HTTP_ENDPOINT = rpc
+    MAIN_NET_HTTP_ENDPOINT = 'none'
     w3 = Web3(Web3.HTTPProvider(MAIN_NET_HTTP_ENDPOINT))
     account = w3.eth.account.enable_unaudited_hdwallet_features()
     account = w3.eth.account.from_mnemonic(words)
